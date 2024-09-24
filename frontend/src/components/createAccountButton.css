@@ -1,0 +1,30 @@
+.create-account-button {
+  background-color: #007bff; /* Bootstrap primary color */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 20px; /* Space between the text and the button */
+  transition: background-color 0.3s ease;
+}
+
+.create-account-button:hover {
+  background-color: #0056b3; /* Darker shade of blue */
+}
+
+@media (max-width: 600px) {
+  .create-account-button {
+      width: 100%; /* Full width on smaller screens */
+      margin-left: 0; /* Remove left margin for better alignment */
+      padding: 12px; /* Adjust padding for a better touch target */
+      font-size: 18px; /* Slightly larger font size */
+  }
+}
+
+@media (max-width: 480px) {
+  .create-account-button {
+      font-size: 16px; /* Reset font size for smaller screens */
+  }
+}

@@ -1,0 +1,152 @@
+/* contact.css */
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* background-color: rgb(6, 133, 207); */
+  padding: 20px;
+  min-height: 100vh;
+}
+
+.header {
+  width: 70%;
+  background-color: white;
+  color: #4285F4;
+  text-align: center;
+  padding: 10px 0;
+  position: relative;
+  border-radius: 10px;
+}
+
+.header .logo {
+  height: 80px;
+}
+
+.contact-info {
+  font-size: 14px;
+}
+
+.contact-info a {
+  color: white;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+.content-wrapper {
+  background-color: white; 
+  padding: 30px;
+  margin-top: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  width: 100%;
+  text-align: left;
+}
+
+.page-title {
+  font-size: 32px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.address-section {
+  margin-bottom: 20px;
+}
+
+.address-header {
+  display: flex;
+  align-items: center;
+}
+
+.location-icon {
+  font-size: 24px;
+  color: #4285F4;
+  margin-right: 10px;
+}
+
+.address-details {
+  margin-left: 34px;
+  color: #666;
+}
+
+.map-link {
+  margin-top: 10px;
+}
+
+.google-map-icon {
+  font-size: 24px;
+  color: #4285F4; /* Google Maps blue color */
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.map-link a {
+  color: #4285F4;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.map-link a:hover {
+  text-decoration: underline;
+}
+
+.social-media {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.social-icon {
+  margin: 0 10px;
+  font-size: 24px;
+  color: #4285F4;
+  transition: color 0.3s;
+}
+
+.social-icon:hover {
+  color: #333;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .header {
+    width: 90%; /* Full width on smaller screens */
+  }
+
+  .page-title {
+    font-size: 24px; /* Smaller title font size */
+  }
+
+  .content-wrapper {
+    padding: 20px; /* Reduce padding in content */
+  }
+
+  .contact-info {
+    font-size: 12px; /* Smaller font size for contact info */
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    width: 95%; /* Further full width on mobile */
+  }
+
+  .page-title {
+    font-size: 20px; /* Even smaller title font size */
+  }
+
+  .content-wrapper {
+    padding: 15px; /* Further reduce padding in content */
+  }
+
+  .contact-info {
+    font-size: 10px; /* Even smaller font size for contact info */
+  }
+
+  .social-icon {
+    font-size: 20px; /* Smaller social icon size */
+  }
+}

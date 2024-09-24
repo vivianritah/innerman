@@ -1,0 +1,62 @@
+/* NoPage.css */
+
+.nopage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f8f9fa;
+  color: #343a40;
+  text-align: center;
+}
+
+.nopage-title {
+  font-size: 96px;
+  margin: 0;
+}
+
+.nopage-message {
+  font-size: 24px;
+  margin: 10px 0;
+}
+
+.nopage-link {
+  font-size: 18px;
+  color: #007bff;
+  text-decoration: none;
+  margin-top: 20px;
+}
+
+.nopage-link:hover {
+  text-decoration: underline;
+}
+
+/* Add responsiveness */
+@media (max-width: 768px) {
+  .nopage-title {
+      font-size: 64px; /* Adjust title size for tablets */
+  }
+
+  .nopage-message {
+      font-size: 20px; /* Adjust message size for tablets */
+  }
+
+  .nopage-link {
+      font-size: 16px; /* Adjust link size for tablets */
+  }
+}
+
+@media (max-width: 480px) {
+  .nopage-title {
+      font-size: 48px; /* Further adjust title size for mobile */
+  }
+
+  .nopage-message {
+      font-size: 18px; /* Further adjust message size for mobile */
+  }
+
+  .nopage-link {
+      font-size: 14px; /* Further adjust link size for mobile */
+  }
+}

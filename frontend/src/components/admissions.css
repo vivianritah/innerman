@@ -1,0 +1,78 @@
+/* admissions.css */
+.admissions {
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f8ff; /* Light blue background for the container */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+}
+
+.admissions h1 {
+  color: #1e3a8a; /* Dark blue for heading */
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.fees-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background-color: #fff; /* White background for the table */
+}
+
+.fees-table th,
+.fees-table td {
+  border: 1px solid #d1d5db; /* Light grey borders */
+  padding: 12px;
+  text-align: left;
+  font-size: 16px;
+  color: #1f2937; /* Dark grey text */
+}
+
+.fees-table th {
+  background-color: #3b82f6; /* Blue header background */
+  color: #ffffff; /* White text for header */
+  font-weight: bold;
+}
+
+.fees-table tr:nth-child(even) {
+  background-color: #e5e7eb; /* Light grey for even rows */
+}
+
+.fees-table tr:hover {
+  background-color: #93c5fd; /* Light blue on hover */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .admissions {
+    padding: 15px; /* Reduce padding on smaller screens */
+  }
+
+  .admissions h1 {
+    font-size: 20px; /* Smaller font size for heading */
+  }
+
+  .fees-table th,
+  .fees-table td {
+    padding: 10px; /* Reduce padding in table cells */
+    font-size: 14px; /* Smaller font size in table */
+  }
+}
+
+@media (max-width: 480px) {
+  .admissions {
+    padding: 10px; /* Further reduce padding for mobile */
+  }
+
+  .admissions h1 {
+    font-size: 18px; /* Smaller font size for heading */
+  }
+
+  .fees-table th,
+  .fees-table td {
+    padding: 8px; /* Further reduce padding in table cells */
+    font-size: 12px; /* Smaller font size in table */
+  }
+}

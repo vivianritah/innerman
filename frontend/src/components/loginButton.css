@@ -1,0 +1,32 @@
+.login-button {
+  background-color: #007bff; /* Bootstrap primary color */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 20px; /* Space between the text and the button */
+  transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+  background-color: #0056b3; /* Darker shade of blue */
+}
+
+/* Add responsiveness */
+@media (max-width: 768px) {
+  .login-button {
+      padding: 8px 16px; /* Adjust padding for smaller screens */
+      font-size: 14px; /* Reduce font size for smaller screens */
+      margin-left: 10px; /* Reduce left margin for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .login-button {
+      padding: 6px 12px; /* Further adjust padding for mobile */
+      font-size: 12px; /* Further reduce font size for mobile */
+      margin-left: 5px; /* Further reduce left margin for mobile */
+  }
+}

@@ -1,0 +1,107 @@
+.events-section {
+  padding: 40px 20px;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.events-section h2 {
+  font-size: 36px;
+  margin-bottom: 30px;
+  color: #007bff;
+}
+
+.event-item {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+.event-date {
+  text-align: center;
+  background-color: #e0e0e0;
+  padding: 10px;
+  border-radius: 8px;
+  margin-right: 20px;
+  width: 80px;
+}
+
+.event-date .month {
+  font-size: 18px;
+  color: #007bff;
+}
+
+.event-date .day {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.event-date .year {
+  font-size: 14px;
+  color: #666;
+}
+
+.event-details {
+  text-align: left;
+}
+
+.event-details strong {
+  font-size: 18px;
+  display: block;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.event-details p {
+  margin: 5px 0;
+  color: #666;
+}
+
+.event-time,
+.event-location {
+  font-size: 14px;
+}
+
+/* Add responsiveness */
+@media (max-width: 768px) {
+  .events-section h2 {
+      font-size: 28px; /* Decrease font size for smaller screens */
+      margin-bottom: 20px; /* Adjust margin */
+  }
+
+  .event-item {
+      flex-direction: column; /* Stack items vertically on smaller screens */
+      align-items: flex-start; /* Align items to the start */
+      padding: 15px; /* Adjust padding */
+  }
+
+  .event-date {
+      margin-bottom: 10px; /* Add margin below date */
+      width: 100%; /* Full width for date section */
+      margin-right: 0; /* Remove right margin */
+  }
+
+  .event-details {
+      text-align: center; /* Center text on smaller screens */
+  }
+
+  .event-time,
+  .event-location {
+      font-size: 12px; /* Decrease font size for time and location */
+  }
+}
+
+@media (max-width: 480px) {
+  .event-date .month {
+      font-size: 16px; /* Further decrease font size */
+  }
+
+  .event-date .day {
+      font-size: 20px; /* Further decrease font size */
+  }
+
+  .event-details strong {
+      font-size: 16px; /* Decrease font size for strong elements */
+  }
+}

@@ -1,0 +1,116 @@
+/* Style the form container */
+.application {
+  background-color: #fffdd0; /* White background for the form */
+  color: #000; /* Black text color */
+  padding: 20px;
+  max-width: 500px;
+  margin: 20px auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Style the form title */
+.application-title {
+  color: #000; /* Black text color */
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+}
+
+/* Style the form */
+.application-form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Style form labels */
+.application-form label {
+  margin-bottom: 10px;
+  color: #000; /* Black text color for labels */
+  font-weight: bold;
+}
+
+/* Style form inputs */
+.application-form input {
+  padding: 10px;
+  border: 1px solid #ccc; /* Light grey border for inputs */
+  border-radius: 5px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  outline: none;
+  color: #000; /* Black text color */
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Style file input */
+.application-form input[type="file"] {
+  padding: 5px;
+  border: none; /* No border for file input */
+  margin-bottom: 15px;
+  color: #000; /* Black text color */
+}
+
+/* Style form inputs on focus */
+.application-form input:focus {
+  border-color: #007bff; /* Blue border on focus */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Style the submit button */
+.application-form button {
+  background-color: #007bff; /* Blue background for the button */
+  color: white; /* White text for the button */
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+/* Style the submit button on hover */
+.application-form button:hover {
+  background-color: #0056b3; 
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .application {
+    padding: 15px; /* Reduce padding on smaller screens */
+  }
+
+  .application-title {
+    font-size: 1.25rem; /* Smaller font size for title */
+  }
+
+  .application-form input {
+    padding: 8px; /* Reduce padding in inputs */
+    font-size: 0.9rem; /* Smaller font size for inputs */
+  }
+
+  .application-form button {
+    padding: 8px; /* Reduce padding in button */
+    font-size: 0.9rem; /* Smaller font size for button */
+  }
+}
+
+@media (max-width: 480px) {
+  .application {
+    padding: 10px; /* Further reduce padding for mobile */
+  }
+
+  .application-title {
+    font-size: 1.1rem; /* Even smaller font size for title */
+  }
+
+  .application-form input {
+    padding: 6px; /* Further reduce padding in inputs */
+    font-size: 0.8rem; /* Further smaller font size for inputs */
+  }
+
+  .application-form button {
+    padding: 6px; /* Further reduce padding in button */
+    font-size: 0.8rem; /* Further smaller font size for button */
+  }
+}
